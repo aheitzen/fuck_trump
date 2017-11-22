@@ -1,0 +1,73 @@
+html, body {
+	background-color: black;
+	height: 100%;
+	width: 100%;
+}
+
+span.one {
+	animation-name: flash;
+	animation: flash 2s infinite;
+	font-size: 270px;
+	font-family: 'Anton', sans-serif;
+}
+
+span.two {
+	animation-name: flash-two;
+	animation: flash-two 2s infinite;
+	font-size: 270px;
+	font-family: 'Anton', sans-serif;
+}
+
+#margin-left {
+	margin-left: 50px;
+}
+
+p {
+	font-family: 'Oswald', sans-serif;
+	color: white;
+	text-align: center;
+	font-size: 30px;
+}
+
+.dead-center {
+	margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes flash {
+	0% {
+		color: white;
+	}
+	25% {
+		color: blue;
+	}
+	50% {
+		color: red;
+	}
+	75% {
+		color: white;
+	}
+	100% {
+		color: white;
+	}
+}
+
+
+@keyframes flash-two {
+	0%, 100% {
+		color: red;
+	}
+	25% {
+		color: white;
+	}
+	50% {
+		color: blue;
+	}
+	75% {
+		color: red;
+	}
+}
